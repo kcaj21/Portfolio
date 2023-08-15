@@ -1,16 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Profile from '../Components/Profile';
-import NavBar from '../Components/NavBar';
-
+import Header from '../Components/Header';
+import Projects from '../Components/Projects';
 
 const PortfolioContainer = () => {
   return (
     <>
     <Router>
-    <NavBar/>
+    <Header/>
     <Routes>
     <Route path="/Portfolio" element={<Profile />} />
+    <Route path="/Projects" element={<Projects />} />
     </Routes>
     </Router>
     </>
